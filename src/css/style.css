@@ -1,0 +1,158 @@
+* , *::after , *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+
+:root{
+  --color-primary : #234894;
+  --color-button :#219F95;
+  --color-headings : #1E1E1E;
+  --color-tags : #696969;
+
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1,h2,h3 {
+  color: var(--color-headings);
+  font-weight: 700;
+}
+
+.container {
+  max-width: 1287px;
+  height: auto;
+  padding: 2rem;
+  margin: auto;
+}
+
+.user-section__header {
+  margin-bottom: 5rem;
+}
+
+.user-card {
+  max-width: 400px;
+  height: 200px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+
+
+.card__number {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  color: var(--color-primary);
+  background-color: #AFCEDD;
+  padding: 0.6rem 1.4rem;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+.card__detail {
+  color: var(--color-primary);
+  font-size: 1.6rem;
+}
+
+.card__date {
+  font-size: 1.1rem;
+  color: var(--color-tags);
+}
+
+
+
+/* data */
+
+.card__data {
+  margin-top: 1.6rem;
+}
+
+.data__heading {
+  color: var(--color-headings);
+  margin-bottom: 0.6rem;
+  font-size: 1.8rem;
+}
+
+.data__tag {
+  color: var(--color-tags);
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.data__detail {
+  color: var(--color-headings);
+  font-size: 1.6rem;
+}
+
+.data__title {
+  display: flex;
+  align-items: center;
+}
+
+.data__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  margin-left: 0.5rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.data__req {
+  background-color: var(--color-button);
+  border: none;
+  padding: 2.5rem 1.5rem;
+  max-width: 150px;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.user__details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user {
+  padding: 0.5rem;
+}
+
+.user-section {
+  display: grid;
+  gap: 5rem;
+}
+
+@media screen and (min-width:768px) {
+  .user-section {
+    grid-template-columns: repeat(2,1fr);
+
+  }
+}
+
+@media screen and (min-width : 1024px) {
+  .user-section {
+    grid-template-columns: repeat(3,1fr);
+  }
+}
